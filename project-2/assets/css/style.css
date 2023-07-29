@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+/* =============Common============ */
+.content {
+  width: 1170px;
+  max-width: calc(100% - 270px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  min-width: 144px;
+  background: #171100;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 24.5px;
+}
+.desc {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #5f5b53;
+}
+.sub-title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+/* =============Nav============ */
+.fix-header {
+  padding-top: 20px;
+  background: #fffcf4;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #5f5b53;
+}
+.navbar .nav-list a:hover {
+  text-decoration: underline;
+}
+.navbar .nav-list {
+  margin-left: 399px;
+}
+.navbar ul li {
+  margin-left: 42px;
+}
+.navbar .nav-home {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #171100;
+  position: relative;
+}
+.navbar .nav-home::after {
+  position: absolute;
+  background: #171100;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+}
+.navbar .sign-up {
+  margin-left: 70px;
+  color: #fff;
+}
+/* ================Hero========= */
+.hero {
+  background: #fffcf4;
+}
+.hero .content {
+  display: flex;
+  margin-top: 62px;
+  height: calc(100vh - 165px);
+}
+
+.hero .hero-intro {
+  width: 50%;
+  position: relative;
+}
+.hero .hero-intro .image {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+}
+.hero .hero-intro .hero-detail {
+  position: absolute;
+  width: 280px;
+  height: 244px;
+  top: 390px;
+  left: 300px;
+  bottom: 48px;
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+}
+.hero .hero-intro .detail-wrap:not(:first-child) {
+  margin-top: 14px;
+}
+.hero .hero-intro .detail {
+  margin-left: 13px;
+}
+.hero .hero-intro .detail .desc {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #5f5b53;
+}
+.hero .hero-intro .detail strong {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #171100;
+}
+.hero .infor {
+  width: 50%;
+  margin-left: 130px;
+}
+.hero .infor .title {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+.hero .infor .one {
+  margin-top: 22px;
+}
+.hero .infor .contact {
+  align-items: center;
+  margin-top: 38px;
+}
+.hero .infor .see-infor {
+  background: #ffb900;
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 34px;
+}
+.hero .infor .watch-video {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #171100;
+  margin-left: 28px;
+}
+.hero .infor .two {
+  margin-top: 48px;
+}
+.hero .infor .count-list {
+  margin-top: 8px;
+}
+.hero .infor .count:not(:first-child) {
+  margin-left: 28px;
+}
+.hero .infor .count strong {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #171100;
+}
+/* =========Courses========== */
+.courses .content {
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 100px;
+}
+.courses .action {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+.courses .action a img {
+  margin-left: 18px;
+}
+.courses .card {
+  display: flex;
+  margin-top: 55px;
+}
+.courses .card-item {
+  width: 371px;
+  height: 466px;
+  background: #fff;
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.courses .card-item:not(:first-child) {
+  margin-left: 30px;
+}
+.courses .card-image {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+}
+.courses .card-infor {
+  padding: 16px 22px 22px 22px;
+}
+.courses .card-infor .job-name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #171100;
+}
+.courses .card-infor .desc {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #5f5b53;
+  margin-top: 6px;
+}
+.courses .card-infor .row {
+  justify-content: space-between;
+  margin-top: 12px;
+  align-items: center;
+}
+.courses .card-infor .row strong {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #171100;
+}
+.courses .card-infor .row .btn {
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+.active {
+  background: #ffb900;
+}
+/* =======Testimonial======== */
+.testimonial .content {
+  width: 1440px;
+  height: 380px;
+  background: #2e2100;
+  display: flex;
+  align-items: center;
+  padding: 0 135px;
+  justify-content: space-between;
+}
+.testimonial .infor {
+  width: 20%;
+}
+.testimonial .infor .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+.testimonial .infor .name {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-top: 18px;
+  color: #f7f7f7;
+}
+.testimonial .infor .desc {
+  font-size: 1rem;
+  color: #bfbcb3;
+  margin-top: 4px;
+}
+.testimonial .infor .paging {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+.testimonial .infor .page {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+.testimonial .infor .page:not(:first-child) {
+  margin-left: 6px;
+}
+.testimonial .infor .current {
+  background: #ffb900;
+}
+.testimonial .text {
+  width: 740px;
+  position: relative;
+  margin-top: 56px;
+}
+.testimonial .text img {
+  position: absolute;
+  left: -30px;
+  top: -28px;
+}
+.testimonial .text .talk {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+/*  features*/
+.features {
+  margin-top: 200px;
+  padding-bottom: 200px;
+}
+.features .content {
+  display: flex;
+  height: 438px;
+}
+.features-image {
+  width: 50%;
+  align-items: center;
+  position: relative;
+}
+.features-image .image {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+}
+.features-image .first {
+  position: absolute;
+  bottom: -17px;
+}
+.features-image .second {
+  position: absolute;
+  top: 17px;
+  left: 300px;
+}
+.features-infor {
+  width: 570px;
+  margin-left: 120px;
+  margin-top: 58px;
+}
+.features-infor .title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+.features-infor .desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #5f5b53;
+}
+.features-infor .btn {
+  margin-top: 32px;
+}
+/* CTA */
+.cta .content {
+  display: flex;
+  padding-bottom: 200px;
+  align-items: center;
+}
+.cta-infor {
+  width: 570px;
+}
+.cta-infor .sub-title {
+  font-size: 2.4rem;
+}
+.cta-infor .desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #5f5b53;
+}
+.cta-infor .btn {
+  margin-top: 32px;
+}
+.cta .image {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+  margin-left: 80px;
+}
+/* Blog */
+.blog {
+  background: #fffcf4;
+}
+.blog .content {
+  padding-top: 200px;
+  padding-bottom: 96px;
+}
+.blog .infor .sub-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.blog .infor .desc {
+  display: block;
+  width: 448px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blog .card {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+.blog .card .card-item {
+  width: 370px;
+  background: #ffffff;
+  height: 467px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: 28px;
+}
+.blog .card .image {
+  width: 100%;
+  height: 250px;
+}
+.blog .page {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffb900;
+}
+.blog .card .wrap {
+  margin: 0 20px;
+}
+
+.blog .card .row {
+  align-items: center;
+  margin-top: 20px;
+}
+.blog .card .date {
+  font-weight: 400;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #5f5b53;
+  margin-left: 4px;
+}
+
+.blog .card .date::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: #e2dfda;
+  position: absolute;
+  bottom: -12px;
+}
+.blog .card .desc {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #171100;
+}
+.blog .card .btn {
+  margin-top: 12px;
+}
+.blog .paging {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.blog .paging .no-current {
+  background: #5f5b53;
+}
+/* footer */
+.footer {
+  background: #2e2100;
+}
+.footer .content {
+  padding-top: 96px;
+  padding-bottom: 28px;
+}
+
+.footer .line {
+  margin-top: 38px;
+  height: 1px;
+  background: #59554b;
+}
+.footer .desc {
+  margin-top: 28px;
+  text-align: center;
+  color: #807d74;
+}
+.footer .contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+.footer .contact .sub-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.footer .contact-item .line {
+  width: 130px;
+  margin-top: 14px;
+}
+.footer .contact-item .desc {
+  text-align: left;
+}
+.footer .contact-item .logo {
+  color: #fff;
+}
+.footer .contact-item .social {
+  display: flex;
+  align-items: center;
+}
+.footer .contact-item .social a:not(:first-child) {
+  margin-left: 18px;
+}
+.footer .contact-item .list {
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #bfbcb2;
+}
+
+.footer .contact-item .list strong {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
